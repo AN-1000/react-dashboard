@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+export const App = () => {
+    return (
+        <div
+            style={{
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: '100vh',
+                fontFamily: '',
+            }}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+            <h1
+                style={{
+                    color: '#6EC177',
+                    margin: 0,
+                }}
+            >
+                OSB Admin Panel
+            </h1>
+            <p>Coming Soon ...</p>
+        </div>
+    );
+};
 
 export default App;
